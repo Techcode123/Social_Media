@@ -10,7 +10,7 @@ export const OtherProfile = () => {
     const { id } = useParams();
 
     const fetchData = () => {
-        axios.get(`http://localhost:5000/api/v1/user/userprofile/${id}`, {
+        axios.get(`https://social-media-backend-d6ek.onrender.com/api/v1/user/userprofile/${id}`, {
             withCredentials: true
         }).then((res) => {
             setUser(res.data.user)
