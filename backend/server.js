@@ -16,7 +16,7 @@ connectDatabase();
 
 app.use(cors(
     {
-        origin: "http://localhost:3000",
+        origin: "https://social-media-backend-d6ek.onrender.com",
         credentials: true
     }
 ))
