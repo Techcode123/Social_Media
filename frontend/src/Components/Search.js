@@ -16,7 +16,7 @@ export const Search = () => {
     const handleSearch = async (e) => {
         if (e.key === "Enter") {
             setLoading(true)
-            const res = await axios.get(`http://localhost:5000/api/v1/user/search/${search}`, {
+            const res = await axios.get(`https://social-media-backend-d6ek.onrender.com/api/v1/user/search/${search}`, {
                 withCredentials: true
             })
             setLoading(false)
@@ -34,7 +34,7 @@ export const Search = () => {
 
         setLoading(true)
 
-        const res = await axios.get(`http://localhost:5000/api/v1/user/search/${search}`, {
+        const res = await axios.get(`https://social-media-backend-d6ek.onrender.com/api/v1/user/search/${search}`, {
             withCredentials: true
         })
         setLoading(false)
