@@ -44,9 +44,7 @@ export const OtherProfile = () => {
                     <div className="border-gray-400">{user?.location}</div>
                     <div className="border-gray-400">{user?.description}</div>
                 </div>
-                <div>
-                    <button className="text-white bg-blue-500 w-[80px] rounded-md p-1 text-md" onClick={() => setValue('flex')}>Edit</button>
-                </div>
+               
                 <div className=" text-xl mt-8 font-semibold">
                     All Posts
                 </div>
