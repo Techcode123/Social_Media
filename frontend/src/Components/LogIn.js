@@ -19,7 +19,7 @@ export const LogIn = () => {
 
         try {
             setLoading(true)
-            const res = await axios('http://localhost:5000/api/v1/user/login', {
+            const res = await axios('https://social-media-backend-d6ek.onrender.com/api/v1/user/login', {
                 method: "post",
                 data: data,
                 withCredentials: true
