@@ -25,7 +25,7 @@ export const OtherProfile = () => {
     }, [window.location.pathname])
     return (
         <>
-            <main className="w-[50%] p-2 flex flex-col items-center  overflow-y-scroll h-[89vh] ">
+             <main className="w-full sm:w-[50%] md:w-[45%] lg:w-[50%] p-2 flex flex-col items-center  overflow-y-scroll h-[89vh] ">
                 <div className="flex justify-between w-full items-center">
                     <div className="w-[100px] h-[95px] border border-gray-400 rounded-full"><img src={user?.image?.url} className="w-[100px] h-[95px] rounded-full " /></div>
                     <div className="flex">
@@ -44,7 +44,9 @@ export const OtherProfile = () => {
                     <div className="border-gray-400">{user?.location}</div>
                     <div className="border-gray-400">{user?.description}</div>
                 </div>
-
+                <div>
+                    <button className="text-white bg-blue-500 w-[80px] rounded-md p-1 text-md" onClick={() => setValue('flex')}>Edit</button>
+                </div>
                 <div className=" text-xl mt-8 font-semibold">
                     All Posts
                 </div>
