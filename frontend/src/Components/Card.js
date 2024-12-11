@@ -24,7 +24,7 @@ export function Card(prop) {
 
     const handleLike = async () => {
         try {
-            const res = await axios.patch(`http://localhost:5000/api/v1/post/like/${prop.id}`, null, {
+            const res = await axios.patch(`https://social-media-backend-d6ek.onrender.com/api/v1/post/like/${prop.id}`, null, {
                 withCredentials: true
             })
         } catch (error) {
@@ -36,7 +36,7 @@ export function Card(prop) {
     const handleDelete = async () => {
         setValue('none')
         try {
-            const res = await axios.delete(`http://localhost:5000/api/v1/post/delete/${prop.id}`, {
+            const res = await axios.delete(`https://social-media-backend-d6ek.onrender.com/api/v1/post/delete/${prop.id}`, {
                 withCredentials: true
             })
             toast.success(res?.data?.message, {
@@ -70,7 +70,7 @@ export function Card(prop) {
         e.preventDefault()
         setLoading(true)
         try {
-            const res = await axios.patch(`http://localhost:5000/api/v1/post/comment`, {
+            const res = await axios.patch(`https://social-media-backend-d6ek.onrender.com/api/v1/post/comment`, {
                 text: comment,
                 id: prop.id
             }, {
@@ -102,7 +102,7 @@ export function Card(prop) {
         setLoading(true)
 
         try {
-            const res = await axios.patch(`http://localhost:5000/api/v1/post/update/${prop.id}`, formData, {
+            const res = await axios.patch(`https://social-media-backend-d6ek.onrender.com/api/v1/post/update/${prop.id}`, formData, {
                 withCredentials: true
             });
             setLoading(false)
