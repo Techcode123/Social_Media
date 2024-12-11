@@ -21,7 +21,7 @@ function App() {
 
 
   useEffect(() => {
-    axios('http://localhost:5000/api/v1/user/auth', {
+    axios('https://social-media-backend-d6ek.onrender.com/api/v1/user/auth', {
       method: "get",
       withCredentials: true
     }).then((res) => {
