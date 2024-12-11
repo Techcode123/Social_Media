@@ -31,7 +31,7 @@ export const CreatePost = () => {
         formData.append('content', content);
         setLoading(true)
         try {
-            const res = await axios.post('http://localhost:5000/api/v1/post', formData, {
+            const res = await axios.post('https://social-media-backend-d6ek.onrender.com/api/v1/post', formData, {
                 withCredentials: true
             });
             setLoading(false)
