@@ -16,7 +16,7 @@ export const UserProfile = () => {
     const [changeimg, setChangeImg] = useState(false)
 
     const fetchData = () => {
-        axios.get(`http://localhost:5000/api/v1/user/userprofile/${id}`, {
+        axios.get(`https://social-media-backend-d6ek.onrender.com/api/v1/user/userprofile/${id}`, {
             withCredentials: true
         }).then((res) => {
             if (res.data.message === "Please Login...!") {
@@ -59,7 +59,7 @@ export const UserProfile = () => {
 
         setLoading(true)
         try {
-            axios.patch('http://localhost:5000/api/v1/user/editprofile', formData, {
+            axios.patch('https://social-media-backend-d6ek.onrender.com/api/v1/user/editprofile', formData, {
                 withCredentials: true
             }).then((res) => {
                 setLoading(false)
