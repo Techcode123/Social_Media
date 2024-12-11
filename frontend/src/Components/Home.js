@@ -11,7 +11,7 @@ export const Home = () => {
     const navigate = useNavigate()
 
     const fetchData = () => {
-        axios.get('http://localhost:5000/api/v1/post/getallpost', {
+        axios.get('https://social-media-backend-d6ek.onrender.com/api/v1/post/getallpost', {
             withCredentials: true
         }).then((res) => {
             if (res.data.message === "Please Login...!") {
