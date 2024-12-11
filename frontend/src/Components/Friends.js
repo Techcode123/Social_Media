@@ -14,7 +14,7 @@ export const Friends = () => {
     const navigate = useNavigate();
 
     const fetchData = () => {
-        axios.get(`http://localhost:5000/api/v1/user/userprofile/${id}`, {
+        axios.get(`https://social-media-backend-d6ek.onrender.com/api/v1/user/userprofile/${id}`, {
             withCredentials: true
         }).then((res) => {
             if (res.data.message === "Please Login...!") {
