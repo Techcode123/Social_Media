@@ -34,7 +34,7 @@ export const SignIn = () => {
 
         try {
             setLoading(true)
-            const res = await axios.post('http://localhost:5000/api/v1/user/register', formData);
+            const res = await axios.post('https://social-media-backend-d6ek.onrender.com/api/v1/user/register', formData);
             console.log(res.data)
             setLoading(false)
             toast.success(res.data.message, {
