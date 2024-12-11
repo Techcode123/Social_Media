@@ -11,7 +11,7 @@ export const Comment = (prop) => {
     const handleDelete = async () => {
         console.log(prop.value._id)
         setVal2('none')
-        const res = await axios.delete(`http://localhost:5000/api/v1/post/deletecomment/${prop.value._id}/${prop.postid}`, {
+        const res = await axios.delete(`https://social-media-backend-d6ek.onrender.com/api/v1/post/deletecomment/${prop.value._id}/${prop.postid}`, {
             withCredentials: true
         })
         prop.fetchData();
