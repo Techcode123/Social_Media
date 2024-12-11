@@ -14,7 +14,7 @@ export const RequestCard = (prop) => {
 
     const handleAccept = async () => {
         try {
-            const res = await axios.patch(`http://localhost:5000/api/v1/user/acceptrequest/${prop.id}`, null, {
+            const res = await axios.patch(`https://social-media-backend-d6ek.onrender.com/api/v1/user/acceptrequest/${prop.id}`, null, {
                 withCredentials: true
             })
             toast.success(res?.data?.message, {
@@ -29,7 +29,7 @@ export const RequestCard = (prop) => {
 
     const handleReject = async () => {
         try {
-            const res = await axios.patch(`http://localhost:5000/api/v1/user/cancelrequest/${prop.id}`, null, {
+            const res = await axios.patch(`https://social-media-backend-d6ek.onrender.com/api/v1/user/cancelrequest/${prop.id}`, null, {
                 withCredentials: true
             })
             toast.success(res?.data?.message, {
