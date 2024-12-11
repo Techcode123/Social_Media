@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    scrollbar-width: none;
+}
+
+/* body {
+    @apply bg-slate-50
+} */
+
+.wrapper {
+    max-width: 1150px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+
+.Active{
+    @apply text-blue-500
+}
+form {
+    box-shadow: 0px 0px 25px 4px lightgray;
+}
+
+@media(max-width:1149px){
+    .wrapper {
+        max-width: 950px;
+    }
+}
+
+/* 648 */
