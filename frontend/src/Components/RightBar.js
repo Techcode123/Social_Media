@@ -12,7 +12,7 @@ export const Rightbar = () => {
     const navigate = useNavigate()
 
     const fetchData = () => {
-        axios.get('http://localhost:5000/api/v1/user/getalluser', {
+        axios.get('https://social-media-backend-d6ek.onrender.com/api/v1/user/getalluser', {
             withCredentials: true
         }).then((res) => {
             if (res.data.message === "Please Login...!") {
