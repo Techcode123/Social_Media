@@ -16,7 +16,7 @@ connectDatabase();
 
 app.use(cors(
     {
-        origin: "https://social-media-backend-d6ek.onrender.com",
+        origin: "https://social-media-eksy.onrender.com",
         credentials: true
     }
 ))
