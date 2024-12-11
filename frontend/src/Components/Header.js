@@ -31,7 +31,7 @@ export const Header = () => {
         setDisplay("none")
         localStorage.removeItem('userId')
         try {
-            const res = await axios('http://localhost:5000/api/v1/user/logout', {
+            const res = await axios('https://social-media-backend-d6ek.onrender.com/api/v1/user/logout', {
                 method: "get",
                 withCredentials: true
             });
